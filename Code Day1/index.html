@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="./index.css">
+    
+      <!-- if I put these cdns below reactDOM rendering code it won't render, 
+        hence the order is important, cdns should be on the topmost before writing REACT -->
+      
+            
+   
+</head>
+
+<body>
+    <div id="header">Header</div>
+    <!-- react code is rendered in root only still we can have other divs with react code -->
+    <div id="root">
+        <!-- p tag wont appear as React overrides elements inside root while rendering-->
+        <p>Not rendered</p>
+        <!-- Bundlers: vite, parcel,webpack
+        bundlers minify the code, optimise the code and removes console.log, bundler is a package -->
+    </div> 
+    <div id="footer">Footer</div>
+    <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script> -->
+    <!-- <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
+    <script type="module" src="/App.js"></script>
+  
+</body>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="./App.js"></script>
+</html>

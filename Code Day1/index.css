@@ -1,0 +1,13 @@
+#container{
+    background-color: rgb(190, 113, 209);
+}
+#title{
+    color:chartreuse;
+}
+#child{
+    background-color: aquamarine;
+}
+
+.h2style{
+    color: blueviolet;
+}
